@@ -1,27 +1,11 @@
 # LifeCycle
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+Ejercicio para entender los ciclos de vida de un componente de Angular.-
 
-## Development server
+# Ejercicio propuesto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Después de entender el código, se propone el siguiente ejercicio:
 
-## Code scaffolding
+- Añadir un Input al componente counter que reciba un array de números del 1 al 10 desde el componente app. Al inicializar el componente hay que eliminar los cinco primeros elementos del array y luego sacar el array resultante por consola de manera secuencial (es decir, utilizando un bucle, no sacando el array).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- También se valorará renderizar la secuencia de números en pantalla. Se recomiendo utilizar ng-for para ello. Se debe sacar esta secuencia una vez se hayan eliminado los cinco primeros elementos del array
