@@ -1,6 +1,6 @@
 # LifeCycle
 
-Ejercicio para entender los ciclos de vida de un componente de Angular.-
+Ejercicio para entender los ciclos de vida de un componente de Angular.
 
 # Ejercicio propuesto
 

@@ -11,6 +11,7 @@ import {
   Input,
   SimpleChanges
 } from "@angular/core";
+import { NgForOf } from '@angular/common';
 
 @Component({
   selector: "app-counter",
@@ -19,6 +20,11 @@ import {
 })
 export class CounterComponent implements OnChanges, OnInit, OnDestroy {
   @Input() count;
+  @Input() arrayNum;
+  @Input() name;
+  @Input() firstSurname;
+  @Input() secondSurname;
+  @Input() fullName;
   init: number = 0;
   ngOnChanges(changes: SimpleChanges) {
     console.log("Counter ngOnChange", changes);
@@ -26,6 +32,14 @@ export class CounterComponent implements OnChanges, OnInit, OnDestroy {
 
   ngOnInit() {
     console.log("Counter onInit");
+    console.log(this.arrayNum);
+    this.arrayNum.splice(0, 5);
+    console.log(this.arrayNum);
+    this.renderName(this.name, this.firstSurname, this.secondSurname);
+  }
+
+  renderName(name, firstSurname, secondSurname) {
+    this.fullName = `${name} ${firstSurname} ${secondSurname}`;
   }
 
   // ngDoCheck() {
